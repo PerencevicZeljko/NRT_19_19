@@ -1,39 +1,9 @@
-<<<<<<< HEAD
-<?xml version = "1.0"?>
-=======
 <?xml version = "1.0" standalone="no"?>
 <!DOCTYPE oglasi SYSTEM "oglasi.dtd">
->>>>>>> zadatak3
 <oglasi>
     <oglas>
         <kategorija>Automobili</kategorija>
         <datumIsteka>20.07.2022</datumIsteka>
-<<<<<<< HEAD
-        <cena valuta="dinar">15345</cena>
-        <tekst>
-            Prodajem Alfu za male pare, alfa roba!
-        </tekst>
-        <oznake>
-            <oznaka>Auto</oznaka>
-            <oznaka>Alfa Romeo</oznaka>
-            <oznaka>Povoljno</oznaka>
-        </oznake>
-        <email tip="sluzbeni">povoljniRatko@yahoo.romeo</email>
-    </oglas>
-    <oglas>
-        <kategorija>Automobili</kategorija>
-        <datumIsteka>20.09.2022</datumIsteka>
-        <cena valuta="euro">1200</cena>
-        <tekst>
-            Prodajem Lov Rajdera, kao nov!
-        </tekst>
-        <oznake>
-            <oznaka>Auto</oznaka>
-            <oznaka>Lov</oznaka>
-            <oznaka>Nov</oznaka>
-            <oznaka>Garaza</oznaka>
-        </oznake>
-=======
         <cena>15345</cena>
         <tekst>
             Prodajem Alfu za male pare, alfa roba!
@@ -54,23 +24,11 @@
         <oznaka>Lov</oznaka>
         <oznaka>Nov</oznaka>
         <oznaka>Garaza</oznaka>
->>>>>>> zadatak3
         <email tip="privatni">izDisLov@yahoo.julija</email>
     </oglas>
     <oglas>
         <kategorija>Stanovi</kategorija>
         <datumIsteka>20.12.2022</datumIsteka>
-<<<<<<< HEAD
-        <cena valuta="euro">39999</cena>
-        <tekst>
-            Stan na Beogradu na vodi sa pogledom na nekadasnji koncentracioni logor Sajmiste
-        </tekst>
-        <oznake>
-            <oznaka>Stan</oznaka>
-            <oznaka>Beograd na vodi</oznaka>
-            <oznaka>Beograd</oznaka>
-        </oznake>
-=======
         <cena>39999</cena>
         <tekst>
             Stan na Beogradu na vodi sa pogledom na nekadasnji koncentracioni logor Sajmiste
@@ -78,7 +36,6 @@
         <oznaka>Stan</oznaka>
         <oznaka>Beograd na vodi</oznaka>
         <oznaka>Beograd</oznaka>
->>>>>>> zadatak3
         <email tip="privatni">prodoNisam@gmail.rs</email>
     </oglas>
 </oglasi>
