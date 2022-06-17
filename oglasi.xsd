@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="oglasi">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="oglas" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="kategorija">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="automobili"/>
+                                    <xs:enumeration value="stanovi"/>
+                                    <xs:enumeration value="alati"/>
+                                    <xs:enumeration value="motori"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="datumIsteka">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date">
+                                    <xs:minInclusive value="1900-01-01"/>
+                                    <xs:maxInclusive value="2024-12-31"/>
+                                    <xs:pattern value=".{10}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <!-- cena -->
+                        <xs:element name="cena">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:positiveInteger">
+                                        <xs:attribute name="valuta" type="xs:string" fixed="RSD" />
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="tekst">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:minLength value="10"/>
+                                    <xs:maxLength value="180"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        
+                        <xs:element name="oznaka" type="xs:string" maxOccurs="unbounded"/>
+
+                        <!-- email valja ali bez restrictiona -->
+                         <xs:element name="email">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute name="tip" type="xs:string" default="privatni" />
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- email ne valja
+                        <xs:element name="oznaka" type="xs:string" maxOccurs="unbounded"/>
+                        <xs:element name="email" minOccurs="1">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[^@]+@[^\.]+\..+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:attribute name="tip" type="xs:string"/> -->
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
