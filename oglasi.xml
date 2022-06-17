@@ -1,9 +1,9 @@
 <?xml version = "1.0" standalone="no"?>
 <!DOCTYPE oglasi SYSTEM "oglasi.dtd">
-<oglasi>
+<oglasi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="oglasi.xsd">
     <oglas>
-        <kategorija>Automobili</kategorija>
-        <datumIsteka>20.07.2022</datumIsteka>
+        <kategorija>automobili</kategorija>
+        <datumIsteka>2022-12-05</datumIsteka>
         <cena>15345</cena>
         <tekst>
             Prodajem Alfu za male pare, alfa roba!
@@ -14,8 +14,8 @@
         <email tip="sluzbeni">povoljniRatko@yahoo.romeo</email>
     </oglas>
     <oglas> 
-        <kategorija>Automobili</kategorija>
-        <datumIsteka>20.09.2022</datumIsteka>
+        <kategorija>automobili</kategorija>
+        <datumIsteka>2022-09-22</datumIsteka>
         <cena>1200</cena>
         <tekst>
             Prodajem Lov Rajdera, kao nov!
@@ -27,8 +27,8 @@
         <email tip="privatni">izDisLov@yahoo.julija</email>
     </oglas>
     <oglas>
-        <kategorija>Stanovi</kategorija>
-        <datumIsteka>20.12.2022</datumIsteka>
+        <kategorija>stanovi</kategorija>
+        <datumIsteka>2022-12-01</datumIsteka>
         <cena>39999</cena>
         <tekst>
             Stan na Beogradu na vodi sa pogledom na nekadasnji koncentracioni logor Sajmiste
